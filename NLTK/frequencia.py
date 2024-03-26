@@ -15,7 +15,6 @@ pontuacao = set(string.punctuation)
 stop_words = set(stopwords.words('portuguese'))
 tokens_filtrados = [word for word in tokens if word not in pontuacao and word not in stop_words]
 
-
 frequencia = Counter(tokens_filtrados)
 
 print("Frequência das palavras: ")
